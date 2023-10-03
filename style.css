@@ -1,7 +1,12 @@
 .sidebar {
     display: grid;
     grid-row: 1 / -1;
-
+    background-color: #38bdf8;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-rows: 70px 1fr 1fr;
 }
 
 .all {
@@ -18,7 +23,45 @@
 }
 
 .main-content {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.projects {
+    display: grid;
+    grid-area: 1 / 1 / -1 / 3;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.rightcontent {
+    grid-row: 1 / -1;
+    display: grid;
+}
+body {
+    margin: 0;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#dashicon {
+    height: 100%;
+    width: 30%;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(219deg) brightness(109%) contrast(99%);
+}
+
+.sidebutton {
+    font-size: 0.75em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
 }
