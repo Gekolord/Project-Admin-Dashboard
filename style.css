@@ -1,3 +1,5 @@
+
+
 .sidebar {
     display: grid;
     grid-row: 1 / -1;
@@ -19,7 +21,8 @@
 .header{
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr auto;
+    box-shadow: 0 5px 2px -2px lightgray;
 }
 
 .main-content {
@@ -83,7 +86,9 @@ body {
 }
 
 .header1,
-.header2 {
+.header2,
+.header3,
+.header4 {
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -109,4 +114,58 @@ input {
     width: 3em;
     padding: 0px 15px;
     border-radius: 50%;
+}
+
+.profile-big {
+    height: 4em;
+    width: 4em;
+    padding: 0px 15px;
+    border-radius: 50%;
+}
+
+.userinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header3 {
+    padding: 0px 30px;
+    padding-right: 0px;
+}
+
+.header3 *,
+.header4 * {
+    align-self: flex-start;
+}
+
+.greeting{
+    margin: auto;
+}
+
+.hi {
+    font-size: 0.8em;
+}
+
+.username {
+    font-size: 1.5em;
+}
+
+.header4 {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0px;
+}
+
+button {
+    background-color: #38bdf8;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 20px;
+    margin: 0px 15px;
+}
+
+.header2 {
+    justify-content: flex-end;
 }
