@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .sidebar {
     display: grid;
@@ -15,28 +17,28 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 2fr 5fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .header{
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 2fr auto;
-    box-shadow: 0 5px 2px -2px lightgray;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 .main-content {
     grid-template-columns: 1.5fr 1.5fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    display: grid;
-    
+    background-color: rgb(243, 243, 243);
+
 }
 
 .projects {
     display: grid;
     grid-area: 1 / 1 / -1 / 3;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
 }
 
 .rightcontent {
@@ -168,4 +170,38 @@ button {
 
 .header2 {
     justify-content: flex-end;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-display {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(243, 243, 243);
+    display: grid;
+}
+
+.project {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+}
+
+.project-text {
+    margin: 10px;
+    margin-top: 25px;
+    word-wrap: break-word
+}
+
+.bold {
+    font-weight: 550;
+}
+
+.gray {
+    color: gray;
+    font-size: 0.9em;
 }
